@@ -29,6 +29,7 @@ let tokens;
     tokens = await response.json();
     init();
   } catch (e) {
+    console.log(e.message)
     alert("can not make a call");
   }
 })();
