@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <title>WebRTC</title>
+</head>
+<body>
+    <div id="root">
+        <video id="local-video" playsinline autoplay muted></video>
+        <video id="remote-video" playsinline autoplay></video>
+        <br/>
+    
+        <label>UUID</label>
+        <br>
+        <input type="text" id="call-uuid" value="1" style="border: 1;">
+        <br>
+        <label>Apartment</label>
+        <br>
+        <input type="text" id="call-apt" value="5" style="border: 1;">
+        <br>
+        <button id="call-button" style="border: 1; margin: 10px; width: 100px; height: 100px;">call</button>
+        <br>
+        <div id="timer" style="display: none; margin: 10px; padding: 10px;">123</div>
+
+    </div>
+    <script src="https://cdn.rawgit.com/centrifugal/centrifuge-js/2.5.0/dist/centrifuge.min.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
